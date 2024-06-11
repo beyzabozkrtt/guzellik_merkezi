@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabeBYZ Giriş</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form id="loginForm" action="#" autocomplete="off" class="sign-in-form">
+                        <h4>BabeBYZ</h4>
+                        <div class="heading">
+                            <h2>Hoşgeldiniz!</h2>
+                            <h6>Henüz bir hesabınız yok mu?</h6>
+                            <a href="#" class="toggle">Kayıt Olun.</a>
+                        </div>
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="email" id="loginEmail" class="input-field" autocomplete="off" required />
+                                <label>Mail</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="password" id="loginPassword" class="input-field" autocomplete="off" required />
+                                <label>Şifre</label>
+                            </div>
+                            <input type="submit" value="Giriş" class="sign-btn" />
+                        </div>
+                    </form>
+                    <form id="musteriForm" action="#" autocomplete="off" class="sign-up-form">
+                        <h4>BabeBYZ</h4>
+                        <div class="heading">
+                            <h2>Kayıt Ol!</h2>
+                            <h6>Zaten bir hesabınız var mı?</h6>
+                            <a href="#" class="toggle">Giriş Yap!</a>
+                        </div>
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" id="ad" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>İsim</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" id="soyad" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Soyisim</label>
+                            </div>
+                            <div class="input-wrap">
+                                <select id="cinsiyet" class="input-field" required>
+                                    <option value="">Cinsiyet Seçiniz</option>
+                                    <option value="Erkek">Erkek</option>
+                                    <option value="Kadın">Kadın</option>
+                                    <option value="Diğer">Diğer</option>
+                                </select>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="email" id="email" class="input-field" autocomplete="off" required />
+                                <label>Email</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="tel" id="telefon" minlength="10" class="input-field" autocomplete="off" required />
+                                <label>Telefon Numarası</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="password" id="sifre" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Şifre</label>
+                            </div>
+                            <input type="submit" value="Kayıt Ol!" class="sign-btn" />
+                        </div>
+                    </form>
+                </div>
+                <div class="carousel">
+                    <div class="images-wrapper">
+                        <img src="./img/salon.gif" class="image img-1 show" alt="" />
+                        <img src="./img/Lip filler.gif" class="image img-2" alt="" />
+                        <img src="./img/salon.gif" class="image img-3" alt="" />
+                    </div>
+                    <div class="bullets">
+                        <span class="active" data-value="1"></span>
+                        <span data-value="2"></span>
+                        <span data-value="3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="message">
+            <span></span>
+        </div>
+    </main>
+    <!-- Javascript file -->
+    <script src="app.js"></script>
+</body>
+</html>
